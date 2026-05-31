@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work & Posts — Vihanga Ashan</title>
+  <meta name="description" content="Portfolio posts and project showcase by Vihanga Ashan.">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="posts.css">
+  <script src="posts.js" defer></script>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">V<span>.</span>A</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#about" onclick="closeMenu()">About</a></li>
+      <li><a href="index.html#skills" onclick="closeMenu()">Skills</a></li>
+      <li><a href="index.html#projects" onclick="closeMenu()">Work</a></li>
+      <li><a href="index.html#experience" onclick="closeMenu()">Experience</a></li>
+      <li><a href="index.html#contact" onclick="closeMenu()">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="posts-header">
+    <div class="posts-header-inner">
+      <a href="index.html#projects" class="back-link">← Back to Projects</a>
+      <div class="section-label">All Work</div>
+      <h1 class="posts-title">Posts &amp;<br><span class="highlight">Portfolio</span></h1>
+      <p class="posts-subtitle">A full collection of my graphic design, web, and video projects.</p>
+
+      <!-- Filter Tabs -->
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="graphic">Graphic Design</button>
+        <button class="filter-btn" data-filter="web">Web Design</button>
+        <button class="filter-btn" data-filter="video">Video</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- POSTS GRID -->
+  <main class="posts-main">
+    <div class="posts-grid" id="postsGrid">
+
+      <!-- POST 01 -->
+      <article class="post-card reveal" data-category="branding web" data-id="nova-brand">
+        <div class="post-thumb">
+          <div class="post-thumb-inner">🚀</div>
+          <div class="post-overlay">
+            <button class="post-view-btn" onclick="openModal('nova-brand')">View Project</button>
+          </div>
+        </div>
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="post-cat">Branding · Web</span>
+            <span class="post-date">Mar 2024</span>
+          </div>
+          <h2 class="post-title">Nova Brand Identity System</h2>
+          <p class="post-excerpt">Full visual identity for a tech startup — logo, colour system, typography, brand guidelines, and a landing page.</p>
+          <div class="post-tags">
+            <span class="project-tag">Figma</span>
+            <span class="project-tag">Illustrator</span>
+            <span class="project-tag">HTML/CSS</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- POST 02 -->
+      <article class="post-card reveal" data-category="graphic" data-id="event-poster">
+        <div class="post-thumb">
+          <div class="post-thumb-inner">🎭</div>
+          <div class="post-overlay">
+            <button class="post-view-btn" onclick="openModal('event-poster')">View Project</button>
+          </div>
+        </div>
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="post-cat">Graphic Design</span>
+            <span class="post-date">Jan 2024</span>
+          </div>
+          <h2 class="post-title">Event Poster Series</h2>
+          <p class="post-excerpt">Bold typographic poster campaigns for cultural events combining editorial photography and layered type systems.</p>
+          <div class="post-tags">
+            <span class="project-tag">Photoshop</span>
+            <span class="project-tag">Illustrator</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- POST 03 -->
+      <article class="post-card reveal" data-category="web" data-id="portfolio-cms">
+        <div class="post-thumb">
+          <div class="post-thumb-inner">💻</div>
+          <div class="post-overlay">
+            <button class="post-view-btn" onclick="openModal('portfolio-cms')">View Project</button>
+          </div>
+        </div>
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="post-cat">Web Development</span>
+            <span class="post-date">Nov 2023</span>
+          </div>
+          <h2 class="post-title">Portfolio CMS</h2>
+          <p class="post-excerpt">A custom web platform for a creative agency with a dynamic portfolio system and content management.</p>
+          <div class="post-tags">
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">Node.js</span>
+            <span class="project-tag">CSS</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- POST 04 -->
+      <article class="post-card reveal" data-category="video" data-id="brand-film">
+        <div class="post-thumb">
+          <div class="post-thumb-inner">🎬</div>
+          <div class="post-overlay">
+            <button class="post-view-btn" onclick="openModal('brand-film')">View Project</button>
+          </div>
+        </div>
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="post-cat">Video · Motion</span>
+            <span class="post-date">Sep 2023</span>
+          </div>
+          <h2 class="post-title">Brand Film — Ceylonese</h2>
+          <p class="post-excerpt">A 90-second brand story film with motion graphics, colour grading, and original sound design.</p>
+          <div class="post-tags">
+            <span class="project-tag">Premiere Pro</span>
+            <span class="project-tag">After Effects</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- POST 05 -->
+      <article class="post-card reveal" data-category="graphic branding" data-id="logo-pack">
+        <div class="post-thumb">
+          <div class="post-thumb-inner">✏️</div>
+          <div class="post-overlay">
+            <button class="post-view-btn" onclick="openModal('logo-pack')">View Project</button>
+          </div>
+        </div>
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="post-cat">Branding</span>
+            <span class="post-date">Jul 2023</span>
+          </div>
+          <h2 class="post-title">Logo Design Pack</h2>
+          <p class="post-excerpt">A collection of 12 logo concepts designed for small businesses across various industries.</p>
+          <div class="post-tags">
+            <span class="project-tag">Illustrator</span>
+            <span class="project-tag">Branding</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- POST 06 -->
+      <article class="post-card reveal" data-category="web graphic" data-id="social-kit">
+        <div class="post-thumb">
+          <div class="post-thumb-inner">📱</div>
+          <div class="post-overlay">
+            <button class="post-view-btn" onclick="openModal('social-kit')">View Project</button>
+          </div>
+        </div>
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="post-cat">Web · Graphic</span>
+            <span class="post-date">May 2023</span>
+          </div>
+          <h2 class="post-title">Social Media Kit</h2>
+          <p class="post-excerpt">Complete social media template kit including Instagram, Facebook, and LinkedIn post templates.</p>
+          <div class="post-tags">
+            <span class="project-tag">Figma</span>
+            <span class="project-tag">Photoshop</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- No results message -->
+    <div class="no-results" id="noResults" style="display:none;">
+      <p>No posts found in this category.</p>
+    </div>
+  </main>
+
+  <!-- PROJECT MODAL -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+    <div class="modal" id="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div class="modal-content" id="modalContent">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Vihanga Ashan. All rights reserved.</p>
+    <p>Designed &amp; built with ❤️ in Sri Lanka</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/posts.js"></script>
+
+</body>
+</html>
