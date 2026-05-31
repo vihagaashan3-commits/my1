@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vihanga Ashan — Creative Designer & Developer</title>
+<meta name="description" content="Portfolio of Vihanga Ashan — Graphic Designer, Web Designer & Video Editor based in Sri Lanka.">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+
+<!-- Stylesheet -->
+<link rel="stylesheet" href="stylem.css">
+
+<!--Script-->
+<script src="por.js" defer></script>
+
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav>
+  <a href="#home" class="nav-logo"><img src="Asset 1.png" width="50px" height="50px"></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about" onclick="closeMenu()">About</a></li>
+    <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+    <li><a href="#projects" onclick="closeMenu()">Work</a></li>
+    <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
+    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg-png fade-up1 delay-6"></div>
+  <div class="hero-content">
+    <div class="hero-tag fade-up">Available for freelance</div>
+    <h1 class="hero-name">
+      <div class="fade-up delay-1">Vihanga</div>
+      <div class="line2 fade-up delay-2">Ashan.</div>
+    </h1>
+    <p class="hero-desc fade-up delay-3">
+      Graphic Designer · Web Designer · Video Editor. Crafting bold visual identities and immersive digital experiences that leave a lasting mark.
+    </p>
+    <div class="hero-cta fade-up delay-4">
+      <a href="#projects" class="btn-primary">View My Work →</a>
+      <a href="#contact" class="btn-secondary">Let's Talk</a>
+    </div>
+  </div>
+  <div class="hero-stats align">
+      <div class="stat-item">
+        <div class="stat-num">6<span>+</span></div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">10<span>+</span></div>
+        <div class="stat-label">Projects Done</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">100<span>%</span></div>
+        <div class="stat-label">Client Satisfaction</div>
+      </div>
+</div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label">About Me</div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <h2 class="section-title">I design<br>experiences,<br>not just visuals.</h2>
+      <p>Hi, I'm <strong>Vihanga Ashan</strong> — a multi-disciplinary creative based in Sri Lanka. I blend the precision of web development with the artistry of graphic design and the storytelling power of video to create work that resonates.</p>
+      <p>From brand identities and UI/UX to motion graphics and full-stack web apps, I approach every project with curiosity, craft, and a relentless eye for detail.</p>
+      <a href="#contact" class="btn-primary" style="margin-top: 1.5rem; display: inline-flex;">Start a Project →</a>
+    </div>
+    <div class="reveal" style="transition-delay: 0.2s">
+      <div class="about-facts">
+        <div class="fact-row">
+          <span class="fact-key">Based in</span>
+          <span class="fact-val">Sri Lanka 🇱🇰</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-key">Speciality</span>
+          <span class="fact-val">Graphic Design <span class="tag">Primary</span></span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-key">Also doing</span>
+          <span class="fact-val">Web Dev · Video Editing</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-key">Status</span>
+          <span class="fact-val" style="color: #4ade80;">● Open to Work</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-key">Languages</span>
+          <span class="fact-val">English · Sinhala</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-key">Tools</span>
+          <span class="fact-val">Figma · Photoshop · Premiere</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-label">What I Do</div>
+  <h2 class="section-title reveal">Skills &amp;<br>Expertise</h2>
+  <div class="skills-grid reveal">
+    <div class="skill-card">
+      <div class="skill-icon">🎨</div>
+      <div class="skill-name">Graphic Design</div>
+      <div class="skill-desc">Brand identities, logos, print design, poster art, and visual communication that tells a story.</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-width="92"></div></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🌐</div>
+      <div class="skill-name">Web Design</div>
+      <div class="skill-desc">Beautiful, responsive UI/UX design with Figma and browser-native precision. Pixel-perfect layouts.</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-width="85"></div></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">💻</div>
+      <div class="skill-name">Web Development</div>
+      <div class="skill-desc">HTML, CSS, JavaScript, and modern frameworks. Turning designs into fast, functional websites.</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-width="78"></div></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🎬</div>
+      <div class="skill-name">Video Editing</div>
+      <div class="skill-desc">Motion graphics, reels, branded content, and cinematic cuts using Premiere Pro and After Effects.</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-width="80"></div></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">📐</div>
+      <div class="skill-name">UI/UX Design</div>
+      <div class="skill-desc">Wireframes, prototypes, and user-centred design systems that balance aesthetics with function.</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-width="82"></div></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">✨</div>
+      <div class="skill-name">Brand Identity</div>
+      <div class="skill-desc">Strategy-led visual identities — logos, style guides, and brand systems that scale across all touchpoints.</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-width="88"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-label">Selected Work</div>
+  <h2 class="section-title reveal">Projects</h2>
+  <div class="projects-grid reveal">
+    <div class="project-card featured">
+      <div>
+        <div class="project-num">01</div>
+        <div class="project-type">Branding · Web Design</div>
+        <h3 class="project-title">Nova Brand Identity System</h3>
+        <p class="project-desc">A full visual identity for a tech startup — logo, colour system, typography, brand guidelines, and a landing page. Delivered across print and digital touchpoints.</p>
+        <div class="project-tags">
+          <span class="project-tag">Figma</span>
+          <span class="project-tag">Illustrator</span>
+          <span class="project-tag">HTML/CSS</span>
+          <span class="project-tag">Brand Strategy</span>
+        </div>
+      </div>
+      <div class="project-preview">🚀</div>
+      <div class="project-arrow">→</div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-num">02</div>
+      <div class="project-type">Graphic Design</div>
+      <h3 class="project-title">Event Poster Series</h3>
+      <p class="project-desc">Bold typographic poster campaigns for cultural events. Combining editorial photography and layered type systems.</p>
+      <div class="project-tags">
+        <span class="project-tag">Photoshop</span>
+        <span class="project-tag">Illustrator</span>
+      </div>
+      <div class="project-arrow">→</div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-num">03</div>
+      <div class="project-type">Web Development</div>
+      <h3 class="project-title">Portfolio CMS</h3>
+      <p class="project-desc">A custom web platform for a creative agency with a dynamic portfolio system and content management.</p>
+      <div class="project-tags">
+        <span class="project-tag">JavaScript</span>
+        <span class="project-tag">CSS</span>
+        <span class="project-tag">Node.js</span>
+      </div>
+      <div class="project-arrow">→</div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-num">04</div>
+      <div class="project-type">Video · Motion</div>
+      <h3 class="project-title">Brand Film — Ceylonese</h3>
+      <p class="project-desc">A 90-second brand story film with motion graphics, colour grading, and original sound design for a local business.</p>
+      <div class="project-tags">
+        <span class="project-tag">Premiere Pro</span>
+        <span class="project-tag">After Effects</span>
+        <span class="project-tag">Color Grade</span>
+      </div>
+      <div class="project-arrow">→</div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-label">Career</div>
+  <h2 class="section-title reveal">Experience</h2>
+  <div class="exp-list reveal">
+    <div class="exp-item">
+      <div class="exp-year">2020 — Present</div>
+      <div>
+        <div class="exp-role">Freelance Creative Designer</div>
+        <div class="exp-company">Self-Employed</div>
+        <div class="exp-detail">Working with clients across Sri Lanka and internationally on brand identities, web design projects, and video content. Specialising in bold, story-driven creative work.</div>
+      </div>
+      <div class="exp-badge">Current</div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-year">2026 — Present</div>
+      <div>
+        <div class="exp-role">Graphic Designer</div>
+        <div class="exp-company">Southern Advertising · Galle</div>
+        <div class="exp-detail">Designed marketing collateral, social media content, and brand assets for a variety of clients. Developed proficiency in print and digital design workflows.</div>
+      </div>
+      <div class="exp-badge">Part-time</div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-year">2021 — 2022</div>
+      <div>
+        <div class="exp-role">Web Design Intern</div>
+        <div class="exp-company">Digital Agency</div>
+        <div class="exp-detail">Assisted in designing and developing website UI for clients, working with Figma prototypes and translating them to responsive HTML/CSS builds.</div>
+      </div>
+      <div class="exp-badge">Internship</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="section-label" style="justify-content: center;">Get In Touch</div>
+    <h2 class="contact-big reveal">
+      Let's make<br>something <span class="highlight">great.</span>
+    </h2>
+    <p class="contact-sub reveal">Open for freelance projects, collaborations, and full-time opportunities.</p>
+    <div class="contact-links reveal">
+      <a href="https://mail.google.com:vihagaashan3@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-link"><img src="gmail-48.png" alt="Clickable GIF" style="width: 20px;" class="contact-link">Gmail Me</a>
+      <a href="http://wa.me/94726854859" target="_blank" rel="noopener noreferrer" class="contact-link"><img src="whatsapp.apng.png" alt="Clickable GIF" style="width: 20px;">Whatsapp</a>
+      <a href="https://www.linkedin.com/in/vihaga-ashan-9348ba3b3" target="_blank" rel="noopener noreferrer" class="contact-link"><img src="linkedin-48.apng.png" alt="Clickable GIF" style="width: 20px;" class="contact-link">LinkedIn</a>
+      <a href="https://www.facebook.com/share/18f7zwTvtu/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="contact-link"><img src="facebook.apng.png" alt="Clickable GIF" style="width: 20px;" class="contact-link">Facebook</a>
+      <a href="https://www.instagram.com/_click_creation_?utm_source=qr" target="_blank" rel="noopener noreferrer" class="contact-link"><img src="instagram.apng.png" alt="Clickable GIF" style="width: 20px;" class="contact-link">Instagram</a>
+      
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Vihanga Ashan. All rights reserved.</p>
+  <p>Designed &amp; built with ❤️ in Sri Lanka</p>
+  <p>Icons by Icons8.All rights reserved Icons8 &copy;</p>
+</footer>
+</body>
+</html>
