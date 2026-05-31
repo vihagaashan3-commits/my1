@@ -130,7 +130,7 @@
   }
 }
 @media (max-width: 414px) {
-  .hero-bg-png .hero-stats {
+  .hero-bg-png {
     width: 340px;
     height: calc(340px * (283 / 521)); /* = ~184px */
     bottom: 4%;
