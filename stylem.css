@@ -136,7 +136,7 @@
     width: min(95vw, 340px);
     height: calc(min(95vw, 340px) * (283 / 521));
     bottom: 4%;
-    left: 30%;
+    right: 60%;
     opacity: 0.3;
   }
 }
