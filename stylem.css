@@ -5,6 +5,7 @@
     --paleivory: #F3F0E7;
     --valco: #b2b0aa;
     --accent: #ff4d00;
+    --cloudwhite: #fafafa;
     --accent2: #ffd700;
     --muted: #2a2a2a;
     --gray: #888;
@@ -74,7 +75,7 @@
     text-decoration: none;
     transition: color 0.2s;
   }
-  .nav-links a:hover { color: var(--white); }
+  .nav-links a:hover { color: var(--accent); }
 
   /* Hamburger for mobile */
   .hamburger {
@@ -337,7 +338,7 @@
     transition: height 0.3s ease;
   }
   .skill-card:hover::before { height: 100%; }
-  .skill-card:hover { background: #111; }
+  .skill-card:hover { background: #111; color: var(--paleivory); }
   .skill-icon { font-size: 1.8rem; margin-bottom: 1.2rem; }
   .skill-name {
     font-family: 'Syne', sans-serif;
@@ -378,7 +379,7 @@
     font-family: 'Syne', sans-serif;
     font-size: 4rem;
     font-weight: 800;
-    color: rgba(255,255,255,0.04);
+    color: #312f2c;
     line-height: 1;
     margin-bottom: 1.5rem;
   }
@@ -396,7 +397,7 @@
     font-weight: 700;
     letter-spacing: -0.02em;
     margin-bottom: 1rem;
-    color: var(--white);
+    color: var(--cloudwhite);
     line-height: 1.2;
   }
   .featured .project-title { font-size: 2.2rem; }
@@ -581,6 +582,8 @@
   gap: 0.5rem;
   padding: 0.9rem 2rem;
   border: 1.5px solid var(--accent);
+  border-radius: 10px 0px 10px 0px;
+  corner-shape: bevel;
   color: var(--accent);
   font-family: 'DM Sans', sans-serif;
   font-size: 0.9rem;
