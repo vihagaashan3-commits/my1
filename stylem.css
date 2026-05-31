@@ -146,7 +146,7 @@
   .hero-bg-png {
     width: 92vw;
     height: calc(92vw * (283 / 521));
-    bottom: 3%;
+    bottom: 50%;
     opacity: 0.2;
   }
 }
