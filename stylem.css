@@ -129,6 +129,16 @@
     opacity: 0.45;
   }
 }
+@media (max-width: 414px) {
+  .hero-bg-png {
+    width: 340px;
+    height: calc(340px * (283 / 521)); /* = ~184px */
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.3;
+  }
+}
 
 /* Mobile */
 @media (max-width: 600px) {
