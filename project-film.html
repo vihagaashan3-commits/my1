@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brand Film — Ceylonese — Vihanga Ashan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylem.css">
+  <link rel="stylesheet" href="project-page.css">
+  <link rel="icon" type="image/png" href="Asset 1.png">
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav>
+    <a href="index.html" class="nav-logo"><img src="Asset 1.png" width="50px" height="50px"></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#about" onclick="closeMenu()">About</a></li>
+      <li><a href="index.html#skills" onclick="closeMenu()">Skills</a></li>
+      <li><a href="index.html#projects" onclick="closeMenu()">Work</a></li>
+      <li><a href="index.html#experience" onclick="closeMenu()">Experience</a></li>
+      <li><a href="index.html#contact" onclick="closeMenu()">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PROJECT HERO -->
+  <header class="pj-hero">
+    <div class="pj-hero-inner">
+      <a href="index.html#projects" class="pj-back">← Back to Projects</a>
+      <div class="pj-meta">
+        <span class="pj-type">Video · Motion Graphics</span>
+        <span class="pj-date">September 2023</span>
+      </div>
+      <h1 class="pj-title">Brand Film — Ceylonese</h1>
+      <p class="pj-desc">A 90-second brand story film for a local Sri Lankan business. Combines on-location footage, custom motion graphics, professional colour grading, and original sound design to tell the brand story in a cinematic and emotionally compelling way.</p>
+      <div class="pj-tags"><span class="project-tag">Premiere Pro</span> <span class="project-tag">After Effects</span> <span class="project-tag">Colour Grading</span> <span class="project-tag">Sound Design</span></div>
+    </div>
+    <div class="pj-cover">🎬</div>
+  </header>
+
+  <!-- OVERVIEW -->
+  <div class="pj-overview">
+    <div class="pj-ov-item"><div class="pj-ov-label">Client</div><div class="pj-ov-val">Ceylonese</div></div>
+<div class="pj-ov-item"><div class="pj-ov-label">Category</div><div class="pj-ov-val">Video Production</div></div>
+<div class="pj-ov-item"><div class="pj-ov-label">Duration</div><div class="pj-ov-val">4 Weeks</div></div>
+<div class="pj-ov-item"><div class="pj-ov-label">Deliverables</div><div class="pj-ov-val">90s Brand Film + Cuts</div></div>
+  </div>
+
+  <!-- GALLERY -->
+  <section class="pj-gallery-section">
+    <div class="section-label">Project Gallery</div>
+    <h2 class="section-title pj-gallery-title">Film Frames & Motion</h2>
+    <div class="pj-gallery">
+      <div class="pj-gallery-item" onclick="openLb(0,galleryItems)" title="Opening Title Sequence"><div class="pj-gallery-inner">🎬</div><div class="pj-gallery-cap">Opening Title Sequence</div></div>
+<div class="pj-gallery-item" onclick="openLb(1,galleryItems)" title="Brand Story — Scene 1"><div class="pj-gallery-inner">🌿</div><div class="pj-gallery-cap">Brand Story — Scene 1</div></div>
+<div class="pj-gallery-item" onclick="openLb(2,galleryItems)" title="Product Showcase"><div class="pj-gallery-inner">☕</div><div class="pj-gallery-cap">Product Showcase</div></div>
+<div class="pj-gallery-item" onclick="openLb(3,galleryItems)" title="Colour Grade Reference"><div class="pj-gallery-inner">🎞️</div><div class="pj-gallery-cap">Colour Grade Reference</div></div>
+<div class="pj-gallery-item" onclick="openLb(4,galleryItems)" title="Motion Graphics Overlay"><div class="pj-gallery-inner">✨</div><div class="pj-gallery-cap">Motion Graphics Overlay</div></div>
+<div class="pj-gallery-item" onclick="openLb(5,galleryItems)" title="Sound Design Timeline"><div class="pj-gallery-inner">🎵</div><div class="pj-gallery-cap">Sound Design Timeline</div></div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="pj-process-section">
+    <div class="section-label">How It Was Made</div>
+    <h2 class="section-title">Process</h2>
+    <div class="pj-process-grid">
+      <div class="pj-step"><div class="pj-step-num">01</div><div class="pj-step-title">Pre-Production</div><div class="pj-step-desc">Scripting the narrative, creating a storyboard, planning locations, and building motion graphics templates before the shoot day.</div></div>
+<div class="pj-step"><div class="pj-step-num">02</div><div class="pj-step-title">Editing & Grade</div><div class="pj-step-desc">Assembling the rough cut in Premiere Pro, then applying a warm cinematic colour grade matching the brand's earthy, artisanal feel.</div></div>
+<div class="pj-step"><div class="pj-step-num">03</div><div class="pj-step-title">Motion & Sound</div><div class="pj-step-desc">Adding custom animated brand elements in After Effects, then mixing original music with ambient sound for the final delivery.</div></div>
+    </div>
+  </section>
+
+  <!-- NEXT PROJECT -->
+  <div class="pj-next">
+    <div>
+      <div class="pj-next-label">Next Project</div>
+      <div class="pj-next-title">Nova Brand Identity System</div>
+    </div>
+    <a href="project-nova.html" class="btn-primary">View Next →</a>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="pj-lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="pj-lb-close" onclick="closeLightbox()">✕</button>
+    <button class="pj-lb-prev" onclick="event.stopPropagation();shiftLb(-1)">‹</button>
+    <div class="pj-lb-img" id="lbImg"></div>
+    <button class="pj-lb-next" onclick="event.stopPropagation();shiftLb(1)">›</button>
+    <div class="pj-lb-caption" id="lbCaption"></div>
+  </div>
+
+  <footer>
+    <p>© 2026 Vihanga Ashan. All rights reserved.</p>
+    <p>Designed &amp; built with ❤️ in Sri Lanka</p>
+    <p>Icons by Icons8. All rights reserved Icons8 &copy;</p>
+  </footer>
+
+  
+<script>const galleryItems = [{"emoji": "\ud83c\udfac", "caption": "Opening Title Sequence"}, {"emoji": "\ud83c\udf3f", "caption": "Brand Story \u2014 Scene 1"}, {"emoji": "\u2615", "caption": "Product Showcase"}, {"emoji": "\ud83c\udf9e\ufe0f", "caption": "Colour Grade Reference"}, {"emoji": "\u2728", "caption": "Motion Graphics Overlay"}, {"emoji": "\ud83c\udfb5", "caption": "Sound Design Timeline"}];</script>
+<script src="por.js"></script>
+  <script src="project-page.js"></script>
+</body>
+</html>

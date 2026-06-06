@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Poster Series — Vihanga Ashan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylem.css">
+  <link rel="stylesheet" href="project-page.css">
+  <link rel="icon" type="image/png" href="Asset 1.png">
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav>
+    <a href="index.html" class="nav-logo"><img src="Asset 1.png" width="50px" height="50px"></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#about" onclick="closeMenu()">About</a></li>
+      <li><a href="index.html#skills" onclick="closeMenu()">Skills</a></li>
+      <li><a href="index.html#projects" onclick="closeMenu()">Work</a></li>
+      <li><a href="index.html#experience" onclick="closeMenu()">Experience</a></li>
+      <li><a href="index.html#contact" onclick="closeMenu()">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PROJECT HERO -->
+  <header class="pj-hero">
+    <div class="pj-hero-inner">
+      <a href="index.html#projects" class="pj-back">← Back to Projects</a>
+      <div class="pj-meta">
+        <span class="pj-type">Graphic Design</span>
+        <span class="pj-date">January 2024</span>
+      </div>
+      <h1 class="pj-title">Event Poster Series</h1>
+      <p class="pj-desc">A bold series of typographic event posters for cultural and music events. Each piece combines editorial photography with strong type systems, layered textures, and vibrant colour to create instantly recognisable visual identities.</p>
+      <div class="pj-tags"><span class="project-tag">Photoshop</span> <span class="project-tag">Illustrator</span> <span class="project-tag">Print Design</span> <span class="project-tag">Typography</span></div>
+    </div>
+    <div class="pj-cover">🎭</div>
+  </header>
+
+  <!-- OVERVIEW -->
+  <div class="pj-overview">
+    <div class="pj-ov-item"><div class="pj-ov-label">Client</div><div class="pj-ov-val">Various Events</div></div>
+<div class="pj-ov-item"><div class="pj-ov-label">Category</div><div class="pj-ov-val">Graphic Design</div></div>
+<div class="pj-ov-item"><div class="pj-ov-label">Duration</div><div class="pj-ov-val">3 Weeks</div></div>
+<div class="pj-ov-item"><div class="pj-ov-label">Deliverables</div><div class="pj-ov-val">Print & Digital Posters</div></div>
+  </div>
+
+  <!-- GALLERY -->
+  <section class="pj-gallery-section">
+    <div class="section-label">Project Gallery</div>
+    <h2 class="section-title pj-gallery-title">Poster Designs</h2>
+    <div class="pj-gallery">
+      <div class="pj-gallery-item" onclick="openLb(0,galleryItems)" title="Music Festival Poster — Main"><div class="pj-gallery-inner">🎨</div><div class="pj-gallery-cap">Music Festival Poster — Main</div></div>
+<div class="pj-gallery-item" onclick="openLb(1,galleryItems)" title="Theatre Night Poster"><div class="pj-gallery-inner">🎭</div><div class="pj-gallery-cap">Theatre Night Poster</div></div>
+<div class="pj-gallery-item" onclick="openLb(2,galleryItems)" title="Concert Series — Vol. 1"><div class="pj-gallery-inner">🎵</div><div class="pj-gallery-cap">Concert Series — Vol. 1</div></div>
+<div class="pj-gallery-item" onclick="openLb(3,galleryItems)" title="City Arts Poster"><div class="pj-gallery-inner">🌆</div><div class="pj-gallery-cap">City Arts Poster</div></div>
+<div class="pj-gallery-item" onclick="openLb(4,galleryItems)" title="Cultural Fair Poster"><div class="pj-gallery-inner">🎪</div><div class="pj-gallery-cap">Cultural Fair Poster</div></div>
+<div class="pj-gallery-item" onclick="openLb(5,galleryItems)" title="Art Exhibition Flyer"><div class="pj-gallery-inner">🖼️</div><div class="pj-gallery-cap">Art Exhibition Flyer</div></div>
+<div class="pj-gallery-item" onclick="openLb(6,galleryItems)" title="Event Program Cover"><div class="pj-gallery-inner">📋</div><div class="pj-gallery-cap">Event Program Cover</div></div>
+<div class="pj-gallery-item" onclick="openLb(7,galleryItems)" title="Open Mic Night Poster"><div class="pj-gallery-inner">🎤</div><div class="pj-gallery-cap">Open Mic Night Poster</div></div>
+<div class="pj-gallery-item" onclick="openLb(8,galleryItems)" title="Gala Dinner Invitation"><div class="pj-gallery-inner">🌟</div><div class="pj-gallery-cap">Gala Dinner Invitation</div></div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="pj-process-section">
+    <div class="section-label">How It Was Made</div>
+    <h2 class="section-title">Process</h2>
+    <div class="pj-process-grid">
+      <div class="pj-step"><div class="pj-step-num">01</div><div class="pj-step-title">Brief & Moodboard</div><div class="pj-step-desc">Understanding the event's tone, audience, and theme. Building a visual moodboard to align on style before design begins.</div></div>
+<div class="pj-step"><div class="pj-step-num">02</div><div class="pj-step-title">Layout & Typography</div><div class="pj-step-desc">Crafting bold typographic compositions that work at large print scale and as small digital thumbnails simultaneously.</div></div>
+<div class="pj-step"><div class="pj-step-num">03</div><div class="pj-step-title">Print-Ready Output</div><div class="pj-step-desc">Exporting CMYK files with bleed for print, plus RGB web-optimised versions for social media and digital promotion.</div></div>
+    </div>
+  </section>
+
+  <!-- NEXT PROJECT -->
+  <div class="pj-next">
+    <div>
+      <div class="pj-next-label">Next Project</div>
+      <div class="pj-next-title">Portfolio CMS</div>
+    </div>
+    <a href="project-cms.html" class="btn-primary">View Next →</a>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="pj-lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="pj-lb-close" onclick="closeLightbox()">✕</button>
+    <button class="pj-lb-prev" onclick="event.stopPropagation();shiftLb(-1)">‹</button>
+    <div class="pj-lb-img" id="lbImg"></div>
+    <button class="pj-lb-next" onclick="event.stopPropagation();shiftLb(1)">›</button>
+    <div class="pj-lb-caption" id="lbCaption"></div>
+  </div>
+
+  <footer>
+    <p>© 2026 Vihanga Ashan. All rights reserved.</p>
+    <p>Designed &amp; built with ❤️ in Sri Lanka</p>
+    <p>Icons by Icons8. All rights reserved Icons8 &copy;</p>
+  </footer>
+
+  
+<script>const galleryItems = [{"emoji": "\ud83c\udfa8", "caption": "Music Festival Poster \u2014 Main"}, {"emoji": "\ud83c\udfad", "caption": "Theatre Night Poster"}, {"emoji": "\ud83c\udfb5", "caption": "Concert Series \u2014 Vol. 1"}, {"emoji": "\ud83c\udf06", "caption": "City Arts Poster"}, {"emoji": "\ud83c\udfaa", "caption": "Cultural Fair Poster"}, {"emoji": "\ud83d\uddbc\ufe0f", "caption": "Art Exhibition Flyer"}, {"emoji": "\ud83d\udccb", "caption": "Event Program Cover"}, {"emoji": "\ud83c\udfa4", "caption": "Open Mic Night Poster"}, {"emoji": "\ud83c\udf1f", "caption": "Gala Dinner Invitation"}];</script>
+<script src="por.js"></script>
+  <script src="project-page.js"></script>
+</body>
+</html>

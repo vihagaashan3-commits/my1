@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio CMS — Vihanga Ashan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylem.css">
+  <link rel="stylesheet" href="project-page.css">
+  <link rel="icon" type="image/png" href="Asset 1.png">
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav>
+    <a href="index.html" class="nav-logo"><img src="Asset 1.png" width="50px" height="50px"></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#about" onclick="closeMenu()">About</a></li>
+      <li><a href="index.html#skills" onclick="closeMenu()">Skills</a></li>
+      <li><a href="index.html#projects" onclick="closeMenu()">Work</a></li>
+      <li><a href="index.html#experience" onclick="closeMenu()">Experience</a></li>
+      <li><a href="index.html#contact" onclick="closeMenu()">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PROJECT HERO -->
+  <header class="pj-hero">
+    <div class="pj-hero-inner">
+      <a href="index.html#projects" class="pj-back">← Back to Projects</a>
+      <div class="pj-meta">
+        <span class="pj-type">Web Development</span>
+        <span class="pj-date">November 2023</span>
+      </div>
+      <h1 class="pj-title">Portfolio CMS</h1>
+      <p class="pj-desc">A fully custom content management system for a creative agency. Features a dynamic portfolio, admin dashboard, animated page transitions, and a blazing-fast front end built from scratch without any framework.</p>
+      <div class="pj-tags"><span class="project-tag">JavaScript</span> <span class="project-tag">Node.js</span> <span class="project-tag">CSS</span> <span class="project-tag">REST API</span> <span class="project-tag">MySQL</span></div>
+    </div>
+    <div class="pj-cover">💻</div>
+  </header>
+
+  <!-- OVERVIEW -->
+  <div class="pj-overview">
+    <div class="pj-ov-item"><div class="pj-ov-label">Client</div><div class="pj-ov-val">Creative Agency</div></div>
+<div class="pj-ov-item"><div class="pj-ov-label">Category</div><div class="pj-ov-val">Web Development</div></div>
+<div class="pj-ov-item"><div class="pj-ov-label">Duration</div><div class="pj-ov-val">8 Weeks</div></div>
+<div class="pj-ov-item"><div class="pj-ov-label">Deliverables</div><div class="pj-ov-val">Full Web Platform</div></div>
+  </div>
+
+  <!-- GALLERY -->
+  <section class="pj-gallery-section">
+    <div class="section-label">Project Gallery</div>
+    <h2 class="section-title pj-gallery-title">Screens & UI</h2>
+    <div class="pj-gallery">
+      <div class="pj-gallery-item" onclick="openLb(0,galleryItems)" title="Homepage — Desktop View"><div class="pj-gallery-inner">🖥️</div><div class="pj-gallery-cap">Homepage — Desktop View</div></div>
+<div class="pj-gallery-item" onclick="openLb(1,galleryItems)" title="Portfolio Grid Page"><div class="pj-gallery-inner">📁</div><div class="pj-gallery-cap">Portfolio Grid Page</div></div>
+<div class="pj-gallery-item" onclick="openLb(2,galleryItems)" title="Admin Dashboard"><div class="pj-gallery-inner">🔧</div><div class="pj-gallery-cap">Admin Dashboard</div></div>
+<div class="pj-gallery-item" onclick="openLb(3,galleryItems)" title="Project Editor"><div class="pj-gallery-inner">📝</div><div class="pj-gallery-cap">Project Editor</div></div>
+<div class="pj-gallery-item" onclick="openLb(4,galleryItems)" title="Mobile Navigation"><div class="pj-gallery-inner">📱</div><div class="pj-gallery-cap">Mobile Navigation</div></div>
+<div class="pj-gallery-item" onclick="openLb(5,galleryItems)" title="Search & Filter UI"><div class="pj-gallery-inner">🔍</div><div class="pj-gallery-cap">Search & Filter UI</div></div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="pj-process-section">
+    <div class="section-label">How It Was Made</div>
+    <h2 class="section-title">Process</h2>
+    <div class="pj-process-grid">
+      <div class="pj-step"><div class="pj-step-num">01</div><div class="pj-step-title">Architecture</div><div class="pj-step-desc">Designed database schema, REST API endpoints, and front-end component structure before writing a single line of UI code.</div></div>
+<div class="pj-step"><div class="pj-step-num">02</div><div class="pj-step-title">Development</div><div class="pj-step-desc">Built back end in Node.js with MySQL, then crafted the front end with vanilla JS, CSS animations, and scroll-based interactions.</div></div>
+<div class="pj-step"><div class="pj-step-num">03</div><div class="pj-step-title">Testing & Launch</div><div class="pj-step-desc">Cross-browser testing, performance optimisation (Lighthouse 95+), and smooth client handoff with documentation.</div></div>
+    </div>
+  </section>
+
+  <!-- NEXT PROJECT -->
+  <div class="pj-next">
+    <div>
+      <div class="pj-next-label">Next Project</div>
+      <div class="pj-next-title">Brand Film — Ceylonese</div>
+    </div>
+    <a href="project-film.html" class="btn-primary">View Next →</a>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="pj-lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="pj-lb-close" onclick="closeLightbox()">✕</button>
+    <button class="pj-lb-prev" onclick="event.stopPropagation();shiftLb(-1)">‹</button>
+    <div class="pj-lb-img" id="lbImg"></div>
+    <button class="pj-lb-next" onclick="event.stopPropagation();shiftLb(1)">›</button>
+    <div class="pj-lb-caption" id="lbCaption"></div>
+  </div>
+
+  <footer>
+    <p>© 2026 Vihanga Ashan. All rights reserved.</p>
+    <p>Designed &amp; built with ❤️ in Sri Lanka</p>
+    <p>Icons by Icons8. All rights reserved Icons8 &copy;</p>
+  </footer>
+
+  
+<script>const galleryItems = [{"emoji": "\ud83d\udda5\ufe0f", "caption": "Homepage \u2014 Desktop View"}, {"emoji": "\ud83d\udcc1", "caption": "Portfolio Grid Page"}, {"emoji": "\ud83d\udd27", "caption": "Admin Dashboard"}, {"emoji": "\ud83d\udcdd", "caption": "Project Editor"}, {"emoji": "\ud83d\udcf1", "caption": "Mobile Navigation"}, {"emoji": "\ud83d\udd0d", "caption": "Search & Filter UI"}];</script>
+<script src="por.js"></script>
+  <script src="project-page.js"></script>
+</body>
+</html>

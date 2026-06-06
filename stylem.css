@@ -598,3 +598,14 @@
   color: #fff;
   transform: translateY(-2px);
 }
+
+/* Project card as link */
+a.project-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+}
+a.project-card.featured {
+  display: grid;
+}

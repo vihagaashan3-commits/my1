@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova Brand Identity System — Vihanga Ashan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylem.css">
+  <link rel="stylesheet" href="project-page.css">
+  <link rel="icon" type="image/png" href="Asset 1.png">
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav>
+    <a href="index.html" class="nav-logo"><img src="Asset 1.png" width="50px" height="50px"></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#about" onclick="closeMenu()">About</a></li>
+      <li><a href="index.html#skills" onclick="closeMenu()">Skills</a></li>
+      <li><a href="index.html#projects" onclick="closeMenu()">Work</a></li>
+      <li><a href="index.html#experience" onclick="closeMenu()">Experience</a></li>
+      <li><a href="index.html#contact" onclick="closeMenu()">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PROJECT HERO -->
+  <header class="pj-hero">
+    <div class="pj-hero-inner">
+      <a href="index.html#projects" class="pj-back">← Back to Projects</a>
+      <div class="pj-meta">
+        <span class="pj-type">Branding · Web Design</span>
+        <span class="pj-date">March 2024</span>
+      </div>
+      <h1 class="pj-title">Nova Brand Identity System</h1>
+      <p class="pj-desc">A complete visual identity for a tech startup — logo, colour system, typography, brand guidelines, and a fully responsive landing page. Every element crafted to feel bold, modern, and scalable across all media.</p>
+      <div class="pj-tags"><span class="project-tag">Figma</span> <span class="project-tag">Illustrator</span> <span class="project-tag">HTML/CSS</span> <span class="project-tag">Brand Strategy</span></div>
+    </div>
+    <div class="pj-cover">🚀</div>
+  </header>
+
+  <!-- OVERVIEW -->
+  <div class="pj-overview">
+    <div class="pj-ov-item"><div class="pj-ov-label">Client</div><div class="pj-ov-val">Nova Tech</div></div>
+<div class="pj-ov-item"><div class="pj-ov-label">Category</div><div class="pj-ov-val">Branding & Web</div></div>
+<div class="pj-ov-item"><div class="pj-ov-label">Duration</div><div class="pj-ov-val">6 Weeks</div></div>
+<div class="pj-ov-item"><div class="pj-ov-label">Deliverables</div><div class="pj-ov-val">Logo, Guidelines, Landing Page</div></div>
+  </div>
+
+  <!-- GALLERY -->
+  <section class="pj-gallery-section">
+    <div class="section-label">Project Gallery</div>
+    <h2 class="section-title pj-gallery-title">Brand Visuals</h2>
+    <div class="pj-gallery">
+      <div class="pj-gallery-item" onclick="openLb(0,galleryItems)" title="Primary Logo Lockup"><div class="pj-gallery-inner">🔷</div><div class="pj-gallery-cap">Primary Logo Lockup</div></div>
+<div class="pj-gallery-item" onclick="openLb(1,galleryItems)" title="Colour Palette System"><div class="pj-gallery-inner">🎨</div><div class="pj-gallery-cap">Colour Palette System</div></div>
+<div class="pj-gallery-item" onclick="openLb(2,galleryItems)" title="Typography Guide"><div class="pj-gallery-inner">📝</div><div class="pj-gallery-cap">Typography Guide</div></div>
+<div class="pj-gallery-item" onclick="openLb(3,galleryItems)" title="Business Card Design"><div class="pj-gallery-inner">🖨️</div><div class="pj-gallery-cap">Business Card Design</div></div>
+<div class="pj-gallery-item" onclick="openLb(4,galleryItems)" title="Landing Page — Desktop"><div class="pj-gallery-inner">💻</div><div class="pj-gallery-cap">Landing Page — Desktop</div></div>
+<div class="pj-gallery-item" onclick="openLb(5,galleryItems)" title="Landing Page — Mobile"><div class="pj-gallery-inner">📱</div><div class="pj-gallery-cap">Landing Page — Mobile</div></div>
+<div class="pj-gallery-item" onclick="openLb(6,galleryItems)" title="Brand Pattern & Icons"><div class="pj-gallery-inner">🏷️</div><div class="pj-gallery-cap">Brand Pattern & Icons</div></div>
+<div class="pj-gallery-item" onclick="openLb(7,galleryItems)" title="Packaging Mockup"><div class="pj-gallery-inner">📦</div><div class="pj-gallery-cap">Packaging Mockup</div></div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="pj-process-section">
+    <div class="section-label">How It Was Made</div>
+    <h2 class="section-title">Process</h2>
+    <div class="pj-process-grid">
+      <div class="pj-step"><div class="pj-step-num">01</div><div class="pj-step-title">Discovery & Strategy</div><div class="pj-step-desc">Deep dive into the client's vision, competitors, and audience to build a clear brand strategy before any design begins.</div></div>
+<div class="pj-step"><div class="pj-step-num">02</div><div class="pj-step-title">Concept & Design</div><div class="pj-step-desc">Exploring logo directions, colour systems, and type pairings. Iterating until the visual language matched the brand strategy perfectly.</div></div>
+<div class="pj-step"><div class="pj-step-num">03</div><div class="pj-step-title">Delivery & Handoff</div><div class="pj-step-desc">Final files across all formats — print, digital, screen — plus a comprehensive brand guidelines document.</div></div>
+    </div>
+  </section>
+
+  <!-- NEXT PROJECT -->
+  <div class="pj-next">
+    <div>
+      <div class="pj-next-label">Next Project</div>
+      <div class="pj-next-title">Event Poster Series</div>
+    </div>
+    <a href="project-poster.html" class="btn-primary">View Next →</a>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="pj-lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="pj-lb-close" onclick="closeLightbox()">✕</button>
+    <button class="pj-lb-prev" onclick="event.stopPropagation();shiftLb(-1)">‹</button>
+    <div class="pj-lb-img" id="lbImg"></div>
+    <button class="pj-lb-next" onclick="event.stopPropagation();shiftLb(1)">›</button>
+    <div class="pj-lb-caption" id="lbCaption"></div>
+  </div>
+
+  <footer>
+    <p>© 2026 Vihanga Ashan. All rights reserved.</p>
+    <p>Designed &amp; built with ❤️ in Sri Lanka</p>
+    <p>Icons by Icons8. All rights reserved Icons8 &copy;</p>
+  </footer>
+
+  
+<script>const galleryItems = [{"emoji": "\ud83d\udd37", "caption": "Primary Logo Lockup"}, {"emoji": "\ud83c\udfa8", "caption": "Colour Palette System"}, {"emoji": "\ud83d\udcdd", "caption": "Typography Guide"}, {"emoji": "\ud83d\udda8\ufe0f", "caption": "Business Card Design"}, {"emoji": "\ud83d\udcbb", "caption": "Landing Page \u2014 Desktop"}, {"emoji": "\ud83d\udcf1", "caption": "Landing Page \u2014 Mobile"}, {"emoji": "\ud83c\udff7\ufe0f", "caption": "Brand Pattern & Icons"}, {"emoji": "\ud83d\udce6", "caption": "Packaging Mockup"}];</script>
+<script src="por.js"></script>
+  <script src="project-page.js"></script>
+</body>
+</html>
