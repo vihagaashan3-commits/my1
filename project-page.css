@@ -165,7 +165,7 @@
 }
 
 .pj-gallery-inner {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: auto;
   display: flex;
   align-items: center;
   justify-content: center;
